@@ -7,3 +7,6 @@ https://roadmap.sh/projects/task-tracker
 
 The link is provided below for One_page_CV project
 https://roadmap.sh/projects/single-page-cv
+
+The link is provided below for One_page_CV project
+https://roadmap.sh/projects/task-tracker
