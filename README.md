@@ -10,3 +10,6 @@ https://roadmap.sh/projects/single-page-cv
 
 The link is provided below for Basic_HTML_Website project
 https://roadmap.sh/projects/basic-html-website
+
+The link is provided below for Personal_Portfolio_Website project
+https://roadmap.sh/projects/portfolio-website
