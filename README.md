@@ -22,3 +22,6 @@ https://roadmap.sh/projects/datepicker-ui
 
 The link is provided below for Number_Guessing_Game project
 https://roadmap.sh/projects/number-guessing-game
+
+The link is provided below for Changelog_Component project
+https://roadmap.sh/projects/changelog-component
