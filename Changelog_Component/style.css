@@ -1,0 +1,99 @@
+body {
+  background: #fff;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.changelog-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 32px 24px 40px 24px;
+  border: 2px solid #222;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  text-align: center;
+  position: relative;
+}
+
+.changelog-title {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.changelog-subtitle {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto 32px auto;
+  width: 100%;
+  min-height: 350px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 145px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #222;
+  z-index: 0;
+}
+
+.timeline-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  position: relative;
+  min-height: 36px;
+}
+
+.timeline-date {
+  width: 140px;
+  text-align: right;
+  color: #b0b0b0;
+  font-size: 1.05rem;
+  margin-right: 32px;
+  flex-shrink: 0;
+}
+
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: #111;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #222;
+  z-index: 1;
+  margin-right: 32px;
+  margin-left: -9px;
+}
+
+.timeline-content {
+  text-align: left;
+  font-size: 1.15rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.changelog-btn {
+  margin-top: 24px;
+  padding: 12px 32px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.changelog-btn:hover {
+  background: #444;
+}
