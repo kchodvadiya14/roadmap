@@ -1,0 +1,102 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Profile Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="form-container" role="form" aria-labelledby="profile-form-title">
+    <h2 id="profile-form-title">Profile Update</h2>
+    <form id="profile-form" novalidate>
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input 
+          type="text" 
+          id="full-name" 
+          name="full-name" 
+          placeholder="What should we call you?" 
+          aria-required="true"
+          aria-describedby="full-name-error"
+          autocomplete="name"
+        />
+        <span class="error-message" id="full-name-error" aria-live="polite"></span>
+      </div>
+  
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="john@doe.com" 
+          aria-required="true"
+          aria-describedby="email-error"
+          autocomplete="email"
+        />
+        <span class="error-message" id="email-error" aria-live="polite"></span>
+      </div>
+  
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Enter Password</label>
+        <div class="password-wrapper">
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            aria-required="true"
+            aria-describedby="password-error"
+            autocomplete="new-password"
+          />
+          <button 
+            type="button" 
+            class="toggle-password" 
+            aria-label="Show password"
+            tabindex="0"
+          >👁️</button>
+        </div>
+        <span class="error-message" id="password-error" aria-live="polite"></span>
+      </div>
+  
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <div class="password-wrapper">
+          <input 
+            type="password" 
+            id="confirm-password" 
+            name="confirm-password" 
+            aria-required="true"
+            aria-describedby="confirm-password-error"
+            autocomplete="new-password"
+          />
+          <button 
+            type="button" 
+            class="toggle-password" 
+            aria-label="Show password"
+            tabindex="0"
+          >👁️</button>
+        </div>
+        <span class="error-message" id="confirm-password-error" aria-live="polite"></span>
+      </div>
+  
+      <button type="submit" class="update-btn">Update Profile</button>
+    </form>
+  
+    <!-- Profile Completeness -->
+    <aside class="profile-completeness" aria-labelledby="completeness-title">
+      <div class="progress-circle" id="progress-circle" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" role="progressbar">
+        <span id="progress-value">0%</span>
+      </div>
+      <h3 id="completeness-title">Profile Completeness</h3>
+      <ul class="checklist" id="checklist">
+        <li id="check-name"><s>Enter Full Name</s></li>
+        <li id="check-email"><s>Enter Valid Email</s></li>
+        <li id="check-password"><s>Set Password</s></li>
+        <li id="check-confirm"><s>Passwords Match</s></li>
+      </ul>
+    </aside>
+  </div>
+  <script src="script.js"></script>
