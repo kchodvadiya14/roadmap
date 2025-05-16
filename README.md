@@ -29,5 +29,8 @@ https://roadmap.sh/projects/number-guessing-game
 The link is provided below for Changelog_Component project
 https://roadmap.sh/projects/changelog-component
 
-The link is provided below for Accessible+form_UI project
+The link is provided below for Accessible_form_UI project
 https://roadmap.sh/projects/accessible-form-ui
+
+The link is provided below for Image_Grid_Layout project
+https://roadmap.sh/projects/image-grid
