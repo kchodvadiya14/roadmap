@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Personal Blog{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background: #555;
+            border-radius: 3px;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article-list {
+            list-style: none;
+            padding: 0;
+        }
+        .article-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .article-item:last-child {
+            border-bottom: none;
+        }
+        .article-item a {
+            color: #333;
+            text-decoration: none;
+        }
+        .article-item a:hover {
+            color: #666;
+        }
+        .article-meta {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        textarea {
+            min-height: 200px;
+        }
+        button {
+            background: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+        .flash-messages {
+            list-style: none;
+            padding: 0;
+        }
+        .flash-message {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="{{ url_for('home') }}">Home</a>
+            </div>
+            <div>
+                {% if session.get('admin') %}
+                    <a href="{{ url_for('dashboard') }}">Dashboard</a>
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">Login</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flash-messages">
+                    {% for message in messages %}
+                        <li class="flash-message">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html> 
