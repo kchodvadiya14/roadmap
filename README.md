@@ -40,3 +40,6 @@ https://roadmap.sh/projects/tooltip-ui
 
 The link is provided below for Tabs_UI project
 https://roadmap.sh/projects/simple-tabs
+
+The link is provided below for Github_User_Activity project
+https://roadmap.sh/projects/github-user-activity
