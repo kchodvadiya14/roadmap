@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.calculator {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.result {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.result-item {
+    flex: 1;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Flatpickr customization */
+.flatpickr-calendar {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.flatpickr-day.selected {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .calculator {
+        padding: 20px;
+    }
+    
+    .result {
+        flex-direction: column;
+    }
+    
+    .result-item {
+        margin: 5px 0;
+    }
+} 
