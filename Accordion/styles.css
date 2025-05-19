@@ -1,0 +1,97 @@
+.accordion {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .accordion h2 {
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .accordion p {
+    text-align: center;
+    color: #636e72;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .accordion-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .accordion-header {
+    width: 100%;
+    padding: 1.25rem;
+    background: #ffffff;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2d3436;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .accordion-header:hover {
+    background: #f8f9fa;
+    color: #0984e3;
+  }
+  
+  .accordion-header::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: #0984e3;
+    transition: all 0.3s ease;
+    font-weight: 300;
+  }
+  
+  .accordion-header.active {
+    background: #f8f9fa;
+    color: #0984e3;
+    font-weight: 600;
+  }
+  
+  .accordion-header.active::after {
+    content: '−';
+    transform: scale(1.2);
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 1.25rem;
+    color: #636e72;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .accordion-content.active {
+    max-height: 300px;
+    padding: 1.25rem;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 0.5rem;
+  }
