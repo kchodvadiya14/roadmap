@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Component</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+            <button class="tab-btn" data-tab="tab2">Tab 2</button>
+            <button class="tab-btn" data-tab="tab3">Tab 3</button>
+            <button class="tab-btn" data-tab="tab4">Tab 4</button>
+        </div>
+        
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <h2>Tab 1 Content</h2>
+                <p>This is the content for Tab 1. It's active by default.</p>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <h2>Tab 2 Content</h2>
+                <p>This is the content for Tab 2. Click the tab to see this content.</p>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <h2>Tab 3 Content</h2>
+                <p>This is the content for Tab 3. Click the tab to see this content.</p>
+            </div>
+            <div class="tab-pane" id="tab4">
+                <h2>Tab 4 Content</h2>
+                <p>This is the content for Tab 4. Click the tab to see this content.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
