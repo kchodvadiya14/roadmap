@@ -55,3 +55,6 @@ https://roadmap.sh/projects/cookie-consent
 
 The link is provided below for Restricted_Textarea project
 https://roadmap.sh/projects/restricted-textarea
+
+The link is provided below for Accordion project
+https://roadmap.sh/projects/accordion
