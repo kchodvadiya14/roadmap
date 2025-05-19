@@ -46,3 +46,6 @@ https://roadmap.sh/projects/github-user-activity
 
 The link is provided below for Unit_Converter project
 https://roadmap.sh/projects/unit-converter
+
+The link is provided below for Personal_Blog project
+https://roadmap.sh/projects/personal-blog
