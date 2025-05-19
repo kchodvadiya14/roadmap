@@ -52,3 +52,6 @@ https://roadmap.sh/projects/personal-blog
 
 The link is provided below for Cookie_Consent project
 https://roadmap.sh/projects/cookie-consent
+
+The link is provided below for Restricted_Textarea project
+https://roadmap.sh/projects/restricted-textarea
