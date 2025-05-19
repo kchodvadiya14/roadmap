@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        
+        <div class="converter-section">
+            <h2>Length Converter</h2>
+            <form action="/convert" method="POST">
+                <input type="hidden" name="type" value="length">
+                <div class="input-group">
+                    <input type="number" name="value" step="any" required placeholder="Enter value">
+                    <select name="from" required>
+                        <option value="mm">Millimeter (mm)</option>
+                        <option value="cm">Centimeter (cm)</option>
+                        <option value="m">Meter (m)</option>
+                        <option value="km">Kilometer (km)</option>
+                        <option value="in">Inch (in)</option>
+                        <option value="ft">Foot (ft)</option>
+                        <option value="yd">Yard (yd)</option>
+                        <option value="mi">Mile (mi)</option>
+                    </select>
+                    <span>to</span>
+                    <select name="to" required>
+                        <option value="mm">Millimeter (mm)</option>
+                        <option value="cm">Centimeter (cm)</option>
+                        <option value="m">Meter (m)</option>
+                        <option value="km">Kilometer (km)</option>
+                        <option value="in">Inch (in)</option>
+                        <option value="ft">Foot (ft)</option>
+                        <option value="yd">Yard (yd)</option>
+                        <option value="mi">Mile (mi)</option>
+                    </select>
+                    <button type="submit">Convert</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="converter-section">
+            <h2>Weight Converter</h2>
+            <form action="/convert" method="POST">
+                <input type="hidden" name="type" value="weight">
+                <div class="input-group">
+                    <input type="number" name="value" step="any" required placeholder="Enter value">
+                    <select name="from" required>
+                        <option value="mg">Milligram (mg)</option>
+                        <option value="g">Gram (g)</option>
+                        <option value="kg">Kilogram (kg)</option>
+                        <option value="oz">Ounce (oz)</option>
+                        <option value="lb">Pound (lb)</option>
+                    </select>
+                    <span>to</span>
+                    <select name="to" required>
+                        <option value="mg">Milligram (mg)</option>
+                        <option value="g">Gram (g)</option>
+                        <option value="kg">Kilogram (kg)</option>
+                        <option value="oz">Ounce (oz)</option>
+                        <option value="lb">Pound (lb)</option>
+                    </select>
+                    <button type="submit">Convert</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="converter-section">
+            <h2>Temperature Converter</h2>
+            <form action="/convert" method="POST">
+                <input type="hidden" name="type" value="temperature">
+                <div class="input-group">
+                    <input type="number" name="value" step="any" required placeholder="Enter value">
+                    <select name="from" required>
+                        <option value="c">Celsius (°C)</option>
+                        <option value="f">Fahrenheit (°F)</option>
+                        <option value="k">Kelvin (K)</option>
+                    </select>
+                    <span>to</span>
+                    <select name="to" required>
+                        <option value="c">Celsius (°C)</option>
+                        <option value="f">Fahrenheit (°F)</option>
+                        <option value="k">Kelvin (K)</option>
+                    </select>
+                    <button type="submit">Convert</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result" class="result-section">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
