@@ -37,3 +37,6 @@ https://roadmap.sh/projects/image-grid
 
 The link is provided below for Tooltip_UI project
 https://roadmap.sh/projects/tooltip-ui
+
+The link is provided below for Tabs_UI project
+https://roadmap.sh/projects/simple-tabs
