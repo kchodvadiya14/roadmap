@@ -49,3 +49,6 @@ https://roadmap.sh/projects/unit-converter
 
 The link is provided below for Personal_Blog project
 https://roadmap.sh/projects/personal-blog
+
+The link is provided below for Cookie_Consent project
+https://roadmap.sh/projects/cookie-consent
