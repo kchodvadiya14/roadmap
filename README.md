@@ -67,3 +67,6 @@ https://roadmap.sh/projects/flash-cards
 
 The link is provided below for Custom_Dropdown project
 https://roadmap.sh/projects/custom-dropdown
+
+The link is provided below for task_tracker_UI project
+https://roadmap.sh/projects/task-tracker-js
