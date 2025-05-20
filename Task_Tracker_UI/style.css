@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.task-tracker-container {
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b; /* Dark cyan heading */
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 25px;
+    border: 1px solid #b2dfdb; /* Light teal border */
+    border-radius: 5px;
+    overflow: hidden; /* Contain the border-radius */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.input-area input[type="text"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: none; /* Remove individual border */
+    outline: none;
+    font-size: 16px;
+}
+
+.input-area input[type="text"]::placeholder {
+    color: #9e9e9e; /* Grey placeholder text */
+}
+
+.input-area button {
+    padding: 12px 20px;
+    background-color: #00796b; /* Dark cyan button */
+    color: white;
+    border: none; /* Remove individual border */
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.input-area button:hover {
+    background-color: #004d40; /* Darker cyan on hover */
+}
+
+#tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tasks-list li {
+    background-color: #f2f2f2; /* Light grey task background */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    border: 1px solid #e0e0e0; /* Lighter grey border */
+}
+
+#tasks-list li:last-child {
+    margin-bottom: 0;
+}
+
+#tasks-list li input[type="checkbox"] {
+    margin-right: 15px;
+    cursor: pointer;
+    width: 20px; /* Increase checkbox size */
+    height: 20px;
+    accent-color: #00796b; /* Dark cyan accent for checkbox */
+}
+
+#tasks-list li .task-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333; /* Dark grey text */
+}
+
+#tasks-list li.completed {
+    background-color: #e0f2f7; /* Lighter blue for completed tasks */
+    border-color: #b3e5fc; /* Light blue border for completed tasks */
+}
+
+#tasks-list li.completed .task-text {
+    text-decoration: line-through;
+    color: #757575; /* Medium grey for completed text */
+}
+
+#tasks-list li .delete-button {
+    background: none;
+    border: none;
+    color: #e57373; /* Light red for delete button */
+    cursor: pointer;
+    font-size: 20px; /* Increase delete icon size */
+    outline: none;
+    transition: color 0.3s ease;
+    padding: 5px;
+}
+
+#tasks-list li .delete-button:hover {
+    color: #ef5350; /* Redder on hover */
+} 
