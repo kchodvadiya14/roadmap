@@ -1,0 +1,82 @@
+.custom-dropdown {
+    position: relative;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto; /* Center the dropdown horizontally with some top margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.dropdown-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.custom-dropdown.open .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    z-index: 10;
+    display: none; /* Hidden by default */
+}
+
+.custom-dropdown.open .dropdown-list {
+    display: block; /* Shown when open */
+}
+
+.dropdown-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-list li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-list li.selected {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.dropdown-list li.selected::after {
+    content: '✓'; /* Checkmark character */
+    margin-left: 10px;
+    color: #5cb85c; /* Green color for checkmark */
+}
+
+#selection-output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    text-align: center;
+    min-height: 20px; /* Ensure some height even when empty */
+    color: #333;
+    font-family: sans-serif;
+} 
