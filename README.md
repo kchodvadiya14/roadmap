@@ -76,3 +76,6 @@ https://roadmap.sh/projects/weather-api-wrapper-service
 
 The link is provided below for Github_Random_repo project
 https://roadmap.sh/projects/github-random-repo
+
+The link is provided below for Reddit_client project
+https://roadmap.sh/projects/reddit-client
