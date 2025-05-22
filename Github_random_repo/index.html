@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Random Repository Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Random Repository Finder</h1>
+
+        <div class="controls">
+            <label for="language-select">Choose a language:</label>
+            <select id="language-select">
+                <option value="">--Select a language--</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <button id="fetch-button">Find Repository</button>
+        </div>
+
+        <div id="results-area">
+            <!-- Repository details will be displayed here -->
+            <p>Select a language and click "Find Repository" to get started.</p>
+        </div>
+
+        <button id="refresh-button" style="display: none;">Refresh</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
